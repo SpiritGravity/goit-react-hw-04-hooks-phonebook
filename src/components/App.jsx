@@ -17,10 +17,10 @@ const defaultContacts = [
 export default function App() {
 
   // const [contacts, setContacts] = useLocalStorage('contacts', []);
-  const itemsContact = () => {
-    return defaultContacts || JSON.parse(localStorage.getItem('contacts'));
-  };
-  const [contacts, setContacts] = useState(itemsContact());
+  // const itemsContact = () => {
+  //   return defaultContacts || JSON.parse(localStorage.getItem('contacts'));
+  // };
+  const [contacts, setContacts] = useState(defaultContacts);
 
   const [filter, setFilter] = useState('');
 
